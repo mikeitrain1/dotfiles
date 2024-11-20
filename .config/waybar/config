@@ -1,0 +1,78 @@
+{
+    "layer": "top",
+    "spacing": 4,
+		// try to keep it 4px across the config
+		"height":25,
+    "modules-left": ["hyprland/workspaces", "custom/icon", "hyprland/window"],
+    "modules-right": ["network", "backlight", "pulseaudio", "cpu", "memory", "battery", "clock", "tray"],
+
+		/*
+		MODULES
+		*/
+		"custom/icon": {
+        "exec": "~/.config/waybar/state",
+        "interval": "once",
+        "signal": 8
+		},
+
+            "tray": {
+        "spacing": 10
+       },
+
+
+"backlight": {
+        "device": "DP-1",
+        "format": "[{percent}%]",
+        "on-click": "",
+    },
+
+
+
+ "clock": {
+        "format": "[{:%I:%M %p}]",
+        "format-alt": "[{:%a %b %d}]",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+
+    "cpu": {
+        "format": "[CPU:{usage}%]",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "[MEM:{percentage}%]"
+    },
+
+
+    "network": {
+        "format-wifi": "[{bandwidthDownBytes}]",
+        "format-ethernet": "[{bandwidthDownBytes}]",
+        "format-disconnected": "󰖪",
+        "interval": 1
+},
+
+    
+
+
+    "battery": {
+      "interval": 2,
+      "states": {
+          "good": 100,
+          "warning": 30,
+          "critical": 15
+      },
+      "max-length": 20,
+      "format": "[BAT:{capacity}%]",
+      "format-charging": "[+ {capacity}%]",
+    },
+
+
+    
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "[VOL:{volume}]",
+        "format-muted": "[VOL: M]",
+        "on-click": "pavucontrol"
+    }
+}
+
+

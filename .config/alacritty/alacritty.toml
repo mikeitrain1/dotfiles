@@ -1,0 +1,43 @@
+colors.draw_bold_text_with_bright_colors = false
+general.import = [ "~/.config/alacritty/gruvbox.toml" ]
+
+[window]
+opacity = 0.9
+
+  [window.padding]
+  x = 18
+  y = 16
+
+  [window.class]
+  instance = "Alacritty"
+  general = "Alacritty"
+
+[scrolling]
+history = 10_000
+multiplier = 3
+
+[font]
+size = 10
+
+  [font.normal]
+  family = "Hack Nerd Font"
+  style = "Regular"
+
+  [font.bold]
+  family = "Hack Nerd Font"
+  style = "Bold"
+
+  [font.italic]
+  family = "Hack Nerd Font"
+  style = "Italic"
+
+  [font.bold_italic]
+  family = "Hack Nerd Font"
+  style = "Bold Italic"
+
+[selection]
+save_to_clipboard = true
+
+[terminal.shell]
+program = "/usr/bin/zsh"
+
