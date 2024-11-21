@@ -1,4 +1,7 @@
-# Personal Zsh configuration file. It is strongly recommended to keep all
+# if [ -z "$TMUX" ]; then
+#   exec tmux new-session -A -s workspace
+# fi
+#
 # shell customization and configuration (including exported environment
 # variables such as PATH) in this file or in files sourced from it.
 #
@@ -16,6 +19,8 @@ zstyle ':z4h:bindkey' keyboard  'pc'
 # Don't start tmux.
 zstyle ':z4h:' start-tmux       no
 
+
+
 # Mark up shell's output with semantic information.
 zstyle ':z4h:' term-shell-integration 'yes'
 
@@ -24,7 +29,7 @@ zstyle ':z4h:' term-shell-integration 'yes'
 zstyle ':z4h:autosuggestions' forward-char 'accept'
 
 # Recursively traverse directories when TAB-completing files.
-zstyle ':z4h:fzf-complete' recurse-dirs 'no'
+zstyle ':z4h:fzf-complete' recurse-dirs 'yes'
 
 # Enable direnv to automatically source .envrc files.
 zstyle ':z4h:direnv'         enable 'no'
@@ -93,7 +98,6 @@ compdef _directories md
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
 
 export PATH="$HOME/.local/bin":$PATH
-
 # Define aliases.
 alias tree='tree -a -I .git'
 
@@ -107,7 +111,14 @@ alias fetch="fastfetch"
 
 alias nn="cd ~/Documents/Notes && nvim ."
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
+alias batteryy="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 
+alias work="tmux new -s work"
+alias t="nvim ~/Documents/Notes/Projects/1Today.md"
+
+
+
+clear
 
 
 # Add flags to existing aliases.

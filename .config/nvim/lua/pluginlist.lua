@@ -1,7 +1,6 @@
 return {
 
     {"ixru/nvim-markdown"},
-
     {'mfussenegger/nvim-jdtls'},
 
     {
@@ -24,22 +23,6 @@ return {
         "lewis6991/gitsigns.nvim",
         config = function()
             require('gitsigns').setup()
-        end
-    },
-
-    {
-        'akinsho/toggleterm.nvim',
-        config = function()
-            require"toggleterm".setup {
-                size = 20,
-                open_mapping = [[<A-1>]],
-                shade_filetypes = {},
-                shade_terminals = true,
-                shading_factor = '1',
-                start_in_insert = true,
-                persist_size = true,
-                direction = 'horizontal'
-            }
         end
     },
 
@@ -151,5 +134,4 @@ return {
             })
         end,
     }
-
 }
