@@ -53,7 +53,7 @@ return {
     {
         "mbbill/undotree",
         config = function()
-            vim.keymap.set("n", "<leader>u", "<cmd>Telescope undo<CR>", { desc = "Telescope Undo" })
+            vim.keymap.set("n", "<leader>u", ":UndotreeToggle<CR>", { desc = "Telescope Undo" })
         end,
     },
 
