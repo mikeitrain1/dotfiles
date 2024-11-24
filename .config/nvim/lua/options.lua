@@ -1,7 +1,9 @@
-vim.o.undofile = true
+vim.o.undofile = false
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+vim.opt.mouse = ""
 
 vim.opt.guicursor  = ""
 vim.o.clipboard = 'unnamedplus'

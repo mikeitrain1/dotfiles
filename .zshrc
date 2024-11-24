@@ -29,7 +29,7 @@ zstyle ':z4h:' term-shell-integration 'yes'
 zstyle ':z4h:autosuggestions' forward-char 'accept'
 
 # Recursively traverse directories when TAB-completing files.
-zstyle ':z4h:fzf-complete' recurse-dirs 'yes'
+zstyle ':z4h:fzf-complete' recurse-dirs 'no'
 
 # Enable direnv to automatically source .envrc files.
 zstyle ':z4h:direnv'         enable 'no'
@@ -116,10 +116,7 @@ alias batteryy="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 alias work="tmux new -s work"
 alias t="nvim ~/Documents/Notes/Projects/1Today.md"
 
-
-
-clear
-
+# export MANPAGER='nvim+Man!'
 
 # Add flags to existing aliases.
 
