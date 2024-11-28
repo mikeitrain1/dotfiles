@@ -23,3 +23,4 @@ stow .
 
 ![[2024-11-28-172033_hyprshot.png]]
 
+![screenshot](/hypr.png) 
