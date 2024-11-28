@@ -1,4 +1,4 @@
-vim.o.undofile = false
+vim.o.undofile = true
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
