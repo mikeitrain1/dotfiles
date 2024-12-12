@@ -3,7 +3,7 @@
     "spacing": 4,
 		// try to keep it 4px across the config
 		"height":25,
-    "modules-left": ["hyprland/workspaces", "custom/icon", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-right": ["network", "backlight", "pulseaudio", "cpu", "memory", "battery", "clock", "tray"],
 
 		/*
