@@ -7,7 +7,7 @@ my arch linux & hyprland setup
 
 ```
 sudo pacman -S git stow hyprland hypridle hyprpaper alacritty \
-neovim ttf-hack-nerd waybar zsh tmux fastfetch mpv obsidian swaync 
+neovim ttf-hack-nerd waybar zsh tmux fastfetch mpv obsidian swaync hyprlock
 
 ```
 
@@ -22,4 +22,4 @@ stow .
 ```
 
 
-![screenshot](/hypr.png) 
+![screenshot](/wall/hypr.png) 
