@@ -45,7 +45,7 @@ zstyle ':z4h:ssh:*'                   enable 'no'
 
 # Send these files over to the remote host when connecting over SSH to the
 # enabled hosts.
-zstyle ':z4h:ssh:*' send-extra-files '~/.nanorc' '~/.env.zsh'
+zstyle ':z4h:ssh:*' send-extra-files '~/.vimrc' '~/.env.zsh'
 
 # Clone additional Git repositories from GitHub.
 #
@@ -118,7 +118,7 @@ alias batteryy="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 alias work="tmux new -s work"
 alias t="nvim ~/Documents/Notes/Projects/1Today.md"
 
-# export MANPAGER='nvim+Man!'
+export MANPAGER='nvim +Man!'
 
 # Add flags to existing aliases.
 
