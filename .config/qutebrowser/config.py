@@ -17,6 +17,8 @@ config.load_autoconfig(False)
 config.set("colors.webpage.darkmode.enabled", True)
 
 
+# config.set("content.user_stylesheets", ["~/.config/qutebrowser/gruvbox.css"])
+
 config.set('content.autoplay', False)
 
 
@@ -31,8 +33,14 @@ config.bind('xt', 'config-cycle tabs.show always never')
 config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')
 
 
+# Swap Shift+J and Shift+K
+config.unbind('<Shift+J>')
+config.unbind('<Shift+K>')
+config.bind('<Shift+J>', 'tab-prev')  # Shift+J now goes to the previous tab
+config.bind('<Shift+K>', 'tab-next')  # Shift+K now goes to the next tab
 
-
+config.bind('j', 'scroll-px 0 75', mode='normal')
+config.bind('k', 'scroll-px 0 -75', mode='normal')
 
 
 # Which cookies to accept. With QtWebEngine, this setting also controls
