@@ -35,8 +35,8 @@
     },
 
     "clock": {
-        "format": "[{:%a %b %d}]",
-        "format-alt": "[{:%I:%M %p}]",
+        "format": "[{:%I:%M %p}]",
+        "format-alt": "[{:%a %b %d}]",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
