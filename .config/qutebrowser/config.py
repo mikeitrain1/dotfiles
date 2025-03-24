@@ -14,7 +14,10 @@
 config.load_autoconfig(False)
 
 
-config.set("colors.webpage.darkmode.enabled", True)
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.policy.images = 'never'
+c.colors.webpage.darkmode.policy.page = 'smart'
+c.colors.webpage.darkmode.algorithm = 'lightness-hsl'
 
 
 # config.set("content.user_stylesheets", ["~/.config/qutebrowser/gruvbox.css"])

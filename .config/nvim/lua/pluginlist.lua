@@ -1,6 +1,8 @@
 return {
 
-        {"habamax/vim-godot", event = 'vimEnter'},
+
+    {'akinsho/toggleterm.nvim'},
+    {"habamax/vim-godot", event = 'vimEnter'},
     {"ixru/nvim-markdown"},
     {'mfussenegger/nvim-jdtls'},
 

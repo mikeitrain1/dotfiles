@@ -7,5 +7,4 @@
 config_version: 2
 settings:
   content.javascript.clipboard:
-    https://github.com: access-paste
-    https://www.theodinproject.com: access-paste
+    https://chat.deepseek.com: access-paste

@@ -20,6 +20,7 @@ zstyle ':z4h:bindkey' keyboard  'pc'
 zstyle ':z4h:' start-tmux       no
 
 
+export TERMINAL=alacritty
 
 # Mark up shell's output with semantic information.
 zstyle ':z4h:' term-shell-integration 'yes'
@@ -119,7 +120,7 @@ alias work="tmux new -s work"
 alias t="nvim ~/Documents/Notes/Projects/1Today.md"
 
 export MANPAGER='nvim +Man!'
-
+export EDITOR=nvim
 # Add flags to existing aliases.
 
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
