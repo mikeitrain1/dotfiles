@@ -1,10 +1,12 @@
 return {
 
-
+    {'hrsh7th/cmp-path'},
     {'akinsho/toggleterm.nvim'},
     {"habamax/vim-godot", event = 'vimEnter'},
     {"ixru/nvim-markdown"},
     {'mfussenegger/nvim-jdtls'},
+
+    {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'},
 
     {
         "ThePrimeagen/harpoon",
