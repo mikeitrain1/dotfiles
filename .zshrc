@@ -118,6 +118,8 @@ alias batteryy="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 
 alias work="tmux new -s work"
 alias t="nvim ~/Documents/Notes/Projects/1Today.md"
+alias ytdl='yt-dlp -f "bestvideo[height>=2160][fps>=60]+bestaudio/bestvideo[height>=1080]+bestaudio/best"'
+alias ytdla='yt-dlp -x --audio-format mp3 --audio-quality 0'
 
 export MANPAGER='nvim +Man!'
 export EDITOR=nvim
