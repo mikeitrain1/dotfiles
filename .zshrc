@@ -121,6 +121,11 @@ alias t="nvim ~/Documents/Notes/Projects/1Today.md"
 alias ytdl='yt-dlp -f "bestvideo[height>=2160][fps>=60]+bestaudio/bestvideo[height>=1080]+bestaudio/best"'
 alias ytdla='yt-dlp -x --audio-format mp3 --audio-quality 0'
 
+alias min='ollama run mistral:7b-instruct-v0.3-q4_K_M'
+alias dol='ollama run CognitiveComputations/dolphin-llama3.1:8b-v2.9.4-Q4_K_M'
+alias deep='ollama run deepseek-r1:7b-qwen-distill-q4_K_M'
+alias phi='ollama run phi3:3.8b-mini-128k-instruct-q4_K_M'
+
 export MANPAGER='nvim +Man!'
 export EDITOR=nvim
 # Add flags to existing aliases.

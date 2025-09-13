@@ -17,22 +17,22 @@ history = 10_000
 multiplier = 3
 
 [font]
-size = 10
+size = 12
 
   [font.normal]
-  family = "Hack Nerd Font"
-  style = "Regular"
+  family = "Iosevka"
+  style = "Medium"
 
   [font.bold]
-  family = "Hack Nerd Font"
+  family = "Iosevka"
   style = "Bold"
 
   [font.italic]
-  family = "Hack Nerd Font"
+  family = "Iosevka"
   style = "Italic"
 
   [font.bold_italic]
-  family = "Hack Nerd Font"
+  family = "Iosevka-Regula"
   style = "Bold Italic"
 
 [selection]
