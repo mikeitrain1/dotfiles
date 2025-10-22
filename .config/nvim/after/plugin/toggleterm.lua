@@ -1,6 +1,6 @@
 require("toggleterm").setup({
   -- Default terminal configuration (horizontal)
-  size = 25,
+  size = 20,
   direction = 'horizontal',
   open_mapping = false, -- Disable default mapping
   shade_terminals = true,

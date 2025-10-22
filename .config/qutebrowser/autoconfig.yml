@@ -7,4 +7,5 @@
 config_version: 2
 settings:
   content.javascript.clipboard:
-    https://chatgpt.com: access-paste
+    https://chat.deepseek.com: access-paste
+    https://translate.google.com: access-paste

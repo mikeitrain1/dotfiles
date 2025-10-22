@@ -1,16 +1,18 @@
 colors.draw_bold_text_with_bright_colors = true
-general.import = [ "~/.config/alacritty/gruvbox.toml" ]
+general.import = [ "~/.config/alacritty/ayu-dark.toml" ]
 
 [window]
-opacity = 0.9
+opacity = 1
+
+dimensions = { columns = 130, lines = 35 }
 
   [window.padding]
-  x = 18
-  y = 16
+x = 18
+y = 16
 
   [window.class]
-  instance = "Alacritty"
-  general = "Alacritty"
+instance = "Alacritty"
+general = "Alacritty"
 
 [scrolling]
 history = 10_000
@@ -20,20 +22,20 @@ multiplier = 3
 size = 12
 
   [font.normal]
-  family = "Iosevka"
-  style = "Medium"
+family = "Iosevka"
+style = "Medium"
 
   [font.bold]
-  family = "Iosevka"
-  style = "Bold"
+family = "Iosevka"
+style = "Bold"
 
   [font.italic]
-  family = "Iosevka"
-  style = "Italic"
+family = "Iosevka"
+style = "Italic"
 
   [font.bold_italic]
-  family = "Iosevka-Regula"
-  style = "Bold Italic"
+family = "Iosevka-Regula"
+style = "Bold Italic"
 
 [selection]
 save_to_clipboard = true
