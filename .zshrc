@@ -1,3 +1,25 @@
+# Smart tmux auto-start and attach logic
+if command -v tmux &> /dev/null; then
+  # Only start tmux if we're not already inside it
+  if [ -z "$TMUX" ]; then
+    # Count how many sessions exist
+    SESSIONS=$(tmux ls 2>/dev/null | wc -l)
+    # Count how many sessions are currently attached
+    ATTACHED=$(tmux ls 2>/dev/null | grep -c "(attached)")
+
+    if [ "$SESSIONS" -eq 0 ]; then
+      # 🆕 No sessions at all → start a new one
+      tmux new-session
+    elif [ "$ATTACHED" -eq 0 ]; then
+      # 🔄 Sessions exist, but none attached → attach to first one
+      tmux attach-session
+    else
+      # ✨ A session is already attached somewhere → start a new one
+      tmux new-session
+    fi
+  fi
+fi
+
 # if [ -z "$TMUX" ]; then
 #   exec tmux new-session -A -s workspace
 # fi
@@ -116,15 +138,13 @@ alias nn="cd ~/Documents/Notes && nvim ."
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias batteryy="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 
-alias work="tmux new -s work"
 alias t="nvim ~/Documents/Notes/Projects/1Today.md"
-alias ytdl='yt-dlp -f "bestvideo[height>=2160][fps>=60]+bestaudio/bestvideo[height>=1080]+bestaudio/best"'
+alias ytdl='yt-dlp -f "bestvideo+bestaudio" --merge-output-format mkv'
 alias ytdla='yt-dlp -x --audio-format mp3 --audio-quality 0'
 
 alias min='ollama run mistral:7b-instruct-v0.3-q4_K_M'
 alias dol='ollama run CognitiveComputations/dolphin-llama3.1:8b-v2.9.4-Q4_K_M'
 alias deep='ollama run deepseek-r1:7b-qwen-distill-q4_K_M'
-alias phi='ollama run phi3:3.8b-mini-128k-instruct-q4_K_M'
 
 export MANPAGER='nvim +Man!'
 export EDITOR=nvim
