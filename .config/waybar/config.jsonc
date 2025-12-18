@@ -1,5 +1,5 @@
 {
-    "layer": "top",
+    "layer": "bottom",
     "spacing": 4,
     "height": 25,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],

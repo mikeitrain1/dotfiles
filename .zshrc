@@ -92,8 +92,6 @@ export GPG_TTY=$TTY
 # Source additional local files if they exist.
 z4h source ~/.env.zsh
 
-clear
-
 # Use additional Git repositories pulled in with `z4h install`.
 #
 # This is just an example that you should delete. It does nothing useful.
@@ -157,4 +155,5 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/mickey/.lmstudio/bin"
 # End of LM Studio CLI section
-
+export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"
