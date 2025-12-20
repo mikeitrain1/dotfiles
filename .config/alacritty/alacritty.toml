@@ -41,5 +41,4 @@ style = "Bold Italic"
 save_to_clipboard = true
 
 [terminal.shell]
-program = "/usr/bin/zsh"
-
+program = "/usr/bin/bash"

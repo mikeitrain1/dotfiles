@@ -1,26 +1,26 @@
-# Smart tmux auto-start and attach logic
-if command -v tmux &> /dev/null; then
-  # Only start tmux if we're not already inside it
-  if [ -z "$TMUX" ]; then
-    # Count how many sessions exist
-    SESSIONS=$(tmux ls 2>/dev/null | wc -l)
-    # Count how many sessions are currently attached
-    ATTACHED=$(tmux ls 2>/dev/null | grep -c "(attached)")
+# # Smart tmux auto-start and attach logic
+# if command -v tmux &> /dev/null; then
+#   # Only start tmux if we're not already inside it
+#   if [ -z "$TMUX" ]; then
+#     # Count how many sessions exist
+#     SESSIONS=$(tmux ls 2>/dev/null | wc -l)
+#     # Count how many sessions are currently attached
+#     ATTACHED=$(tmux ls 2>/dev/null | grep -c "(attached)")
 
-    if [ "$SESSIONS" -eq 0 ]; then
-      # 🆕 No sessions at all → start a new one
-      tmux new-session
-    elif [ "$ATTACHED" -eq 0 ]; then
-      # 🔄 Sessions exist, but none attached → attach to first one
-      tmux attach-session
-    else
-      # ✨ A session is already attached somewhere → start a new one
-      tmux new-session
-    fi
-  fi
-fi
+#     if [ "$SESSIONS" -eq 0 ]; then
+#       # 🆕 No sessions at all → start a new one
+#       tmux new-session
+#     elif [ "$ATTACHED" -eq 0 ]; then
+#       # 🔄 Sessions exist, but none attached → attach to first one
+#       tmux attach-session
+#     else
+#       # ✨ A session is already attached somewhere → start a new one
+#       tmux new-session
+#     fi
+#   fi
+# fi
 
-# if [ -z "$TMUX" ]; then
+# # if [ -z "$TMUX" ]; then
 #   exec tmux new-session -A -s workspace
 # fi
 #
