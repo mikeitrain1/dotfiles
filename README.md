@@ -19,53 +19,23 @@ makepkg -si
 ## Apps
 
 ```
-yay -S git stow hyprland hypridle hyprpaper \
-alacritty hyprshot yt-dlp \
-neovim ttf-hack-nerd waybar zsh tmux \
-fastfetch mpv obsidian swaync \
-hyprlock hyprpaper ly wlogout \
-wlsunset xdg-user-dirs amd-ucode bluez \
-bluez-utils blueman syncthing keepassxc \
-nework-manager-applet hyprpolkitagent \
-pipewire-jack pipewire-alsa pipewire-pulse \
-qjackctl sunity-cursors-git \
-nwg-look lxappearance nemo \
-nemo-fileroller npm unzip tofi zathura imv \
-mtpfs jmtpfs gvfs-mtp gvfs-gphoto2 ripgrep
-zathura-cb zathura-pdf-mupdf \
-rate-mirrors-bin qutebrowser yazi \ 
-jdk-openjdk telegram-desktop-bin go-md2man \
-mousepad hyprpicker btop discord steam \
-retroarch retroarch-assets-xmb glow \
-retroarch-assets-glui  retroarch-assets-ozone \ 
-libreoffice-still vulkan-radeon \
-lib32-vulkan-radeon python-pygame-python-pip \
-gradle qbittorrent ttf-nerd-fonts-symbols \
-shutter-encorder-bin calibre \
-hakuneko-desktop-nightly ttf-nerd-fonts-symbols \
-gruvbox-material-gtk-theme-git \
-gruvbox-material-icon-theme-git pavucontrol \
-obs-studio xdg-desktop-portal-hyprland cmus \
-gamemode mangohud wine0staging goverlay \ 
-peazip-qt-bin batsignal ttf-cica fcitx5 \
-fcitx5-mozc fcitx5-configtool fcitx5-gtk \
-fcitx5-qt
-
-
-
+yay -S git stow hyprland hypridle hyprpaper hyprlock hyprshot \
+swaync waybar zsh tmux alacritty yt-dlp neovim ttf-hack-nerd wlogout \
+wlsunset xdg-user-dirs amd-ucode bluez bluez-utils blueman ripgrep fd \
+network-manager-applet lxappearance mtpfs jmtpfs gvfs-mtp gvfs-gphoto2 \
+tofi npm qutebrowser unzip ttf-nerd-fonts-symbols pavucontrol fcitx5 \
+fcitx5-mozc fcitx5-configtool fcitx5-gtk fcitx5-qt \
 ```
 
 ## dameons 
 ```
-sudo systemctl enable ly.service
-
 xdg-user-dirs-update
 
 sudo systemctl enable bluetooth.service
 
 sudo systemctl enable syncthing@mickey.service
 
-sudo timdeatectl set-ntp true
+sudo timedatectl set-ntp true
 
 ```
 
