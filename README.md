@@ -24,7 +24,7 @@ swaync waybar zsh tmux alacritty yt-dlp neovim ttf-hack-nerd wlogout \
 wlsunset xdg-user-dirs amd-ucode bluez bluez-utils blueman ripgrep fd \
 network-manager-applet lxappearance mtpfs jmtpfs gvfs-mtp gvfs-gphoto2 \
 tofi npm qutebrowser unzip ttf-nerd-fonts-symbols pavucontrol fcitx5 \
-fcitx5-mozc fcitx5-configtool fcitx5-gtk fcitx5-qt tf-iosevka \
+fcitx5-mozc fcitx5-configtool fcitx5-gtk fcitx5-qt ttf-iosevka \
 xdg-desktop-portal-hyprland \
 ```
 
