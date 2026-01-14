@@ -35,19 +35,20 @@
 (setq doom-theme 'doom-gruvbox)
 (setq doom-font (font-spec :family "Iosevka" :size 16))
 
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
-(setq scroll-margin 32)
-(setq undo-tree-auto-save-history t)
+;; (setq scroll-margin 32)
+(setq evil-escape-key-sequence "jk")
+(setq scroll-margin 8
+      scroll-conservatively 101
+      scroll-preserve-screen-position t)
+(setq confirm-kill-emacs nil)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
-
-(setq redisplay-dont-pause t)
-(setq fast-but-imprecise-scrolling t)
-(setq jit-lock-defer-time 0)
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
