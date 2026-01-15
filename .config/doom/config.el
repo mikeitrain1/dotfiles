@@ -45,6 +45,7 @@
       scroll-conservatively 101
       scroll-preserve-screen-position t)
 (setq confirm-kill-emacs nil)
+(setq lsp-enable-auto-install t)  ; Automatically install missing servers
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
