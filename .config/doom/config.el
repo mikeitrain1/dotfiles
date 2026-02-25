@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-gruvbox)
+(setq doom-theme 'doom-vibrant)
 (setq doom-font (font-spec :family "Iosevka" :size 16))
 
 
@@ -44,13 +44,22 @@
 (setq scroll-margin 8
       scroll-conservatively 101
       scroll-preserve-screen-position t)
+
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 (setq confirm-kill-emacs nil)
+(setq desktop-restore-frames nil)
 (setq lsp-enable-auto-install t)  ; Automatically install missing servers
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
-
+;; Simple, reliable PDF export
+(setq org-latex-compiler "pdflatex")
+(setq org-latex-pdf-process
+      '("pdflatex -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -interaction nonstopmode -output-directory %o %f"))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
