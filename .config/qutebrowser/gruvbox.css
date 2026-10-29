@@ -1,0 +1,13 @@
+/* gruvbox.css */
+body {
+    background-color: #282828 !important;
+    color: #ebdbb2 !important;
+}
+
+a {
+    color: #458588 !important;
+}
+
+a:visited {
+    color: #b16286 !important;
+}
